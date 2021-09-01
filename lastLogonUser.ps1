@@ -1,5 +1,5 @@
 ﻿$pc=Get-Content "pc.txt"
-$win32UserFilter = "NOT SID = 'S-1-5-18' AND NOT SID = 'S-1-5-19' AND NOT SID = 'S-1-5-20'"
+$win32UserFilter = "NOT SID = 'S-x-x-x' AND NOT SID = 'S-x-x-x' AND NOT SID = 'S-x-x-x'"
 foreach($pcname in $pc){   
 	if (Test-Connection -ComputerName $pcname -Quiet -Count 1)
     {        
